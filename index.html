@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliusz Krajewski – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="main-header" id="top">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo-link">Juliusz Krajewski</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="pages/ttt.html" class="nav-link">TTT</a></li>
+                <li><a href="#wede"  class="nav-link">WEDE</a></li>
+                <li><a href="#ebsy"  class="nav-link">EBSY</a></li>
+                <li><a href="#appr"  class="nav-link">APPR</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-inner">
+
+        <div class="hero-photo-wrap">
+            <img src="assets/me.jpg"
+                 alt="Juliusz Krajewski"
+                 class="hero-photo">
+            <div class="hero-photo-ring" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-text">
+            <p class="hero-eyebrow">Portfolio</p>
+            <h1 class="hero-name">Juliusz Krajewski</h1>
+            <p class="hero-title">Software Engineering Student | Full-Stack Web Developer | Embedded Systems Enthusiast</p>
+            <div class="hero-badge">
+                <i class="fas fa-award"></i>
+                <span>Represented Ter AA at the 5th edition Drone Challenge</span>
+            </div>
+            <p class="hero-badge-sub">
+                One of three students selected from the entire Ter AA Techniek & ICT college
+                to represent the school at the Drone Challenge.
+            </p>
+            <div class="hero-ctas">
+                <a href="#about" class="btn-gold">About Me</a>
+                <a href="#wede"  class="btn-outline">View Projects</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ABOUT ME -->
+<section class="section about-section" id="about">
+    <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="roman-divider"></div>
+
+        <div class="about-grid">
+
+            <!-- Left: photo + contact card -->
+            <div class="about-left">
+                <img src="assets/me.jpg"
+                     alt="Juliusz Krajewski"
+                     class="about-photo">
+
+                <div class="contact-card">
+                    <p class="card-label">Contact</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>juliuszkrajewski2009@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/ShadowPL618"
+                           target="_blank" rel="noopener">GitHub Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/juliusz-krajewski-12a225389/?skipRedirect=true"
+                           target="_blank" rel="noopener">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: bio, skills, languages -->
+            <div class="about-right">
+                <h3 class="about-role">Software Engineering Student | Full-Stack Web Developer | Embedded Systems Enthusiast</h3>
+                <p class="about-bio">
+                    I am a multilingual Software Engineering student at ROC ter AA, driven by the challenge of building functional, user-centric digital solutions. With a technical foundation spanning front-end design and back-end logic, I specialize in creating efficient web applications using PHP, C#, and MySQL.<br><br>
+                    Beyond the screen, I have a proven track record of high-stakes collaboration and technical leadership. I was honored to be one of three students selected to represent Ter AA at the 2026 Drone Challenge, where I served as the Main 3D Designer and Embedded Systems Engineer. This experience, combined with over 40 hours of community-driven technical work at Stadstuin Helmond, has sharpened my ability to solve complex problems under pressure and work effectively within multidisciplinary teams.<br><br>
+                    Currently expanding my expertise in JavaScript and Python, I am passionate about bridging the gap between hardware and software. I am eager to connect with fellow developers and industry professionals to contribute to innovative projects in the web development and tech sectors.
+                </p>
+
+                <div class="skills-block">
+                    <p class="card-label">Proficient In</p>
+                    <div class="badges-row">
+                        <span class="badge badge-gold">HTML</span>
+                        <span class="badge badge-gold">CSS</span>
+                        <span class="badge badge-gold">PHP</span>
+                        <span class="badge badge-gold">MySQL</span>
+                        <span class="badge badge-gold">Arduino</span>
+                        <span class="badge badge-gold">Visual Studio</span>
+                        <span class="badge badge-gold">YAML</span>
+                        <span class="badge badge-gold">C++</span>
+                        <span class="badge badge-gold">Autodesk Fusion</span>
+                        <span class="badge badge-gold">Teamwork</span>
+                        <span class="badge badge-gold">Problem-solving</span>
+                        <span class="badge badge-gold">Communication</span>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <p class="card-label">Currently Learning</p>
+                    <div class="badges-row">
+                        <span class="badge badge-crimson">JavaScript</span>
+                        <span class="badge badge-crimson">C#</span>
+                        <span class="badge badge-crimson">Python</span>
+                        <span class="badge badge-crimson">Solid Works</span>
+                        <span class="badge badge-crimson">WordPress</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="skills-block">
+                    <p class="card-label">Languages</p>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <span class="lang-name">
+                                Polish
+                                <span class="lang-native-tag">Native</span>
+                            </span>
+                            <span class="lang-level"></span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">English</span>
+                            <span class="lang-level">Proficient</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">Dutch</span>
+                            <span class="lang-level">Proficient</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">Italian</span>
+                            <span class="lang-level">A1 Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Favorite coding languages -->
+                <div class="skills-block">
+                    <p class="card-label">Favorite Languages</p>
+                    <div class="badges-row">
+                        <span class="badge badge-gold badge-favorite">
+                            <i class="fas fa-star"></i>
+                            PHP
+                        </span>
+                        <span class="badge badge-gold badge-favorite">
+                            <i class="fas fa-star"></i>
+                            C++
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Certificates & achievements -->
+                <div class="skills-block">
+                    <p class="card-label">Accreditations & Distinction</p>
+                    <ul class="certificates-list">
+                        <li class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="certificate-body">
+                                <span class="certificate-title">Spelbrekers - Ter AA Representative</span>
+                                <span class="certificate-meta">Ter AA &nbsp;&middot;&nbsp; 2026</span>
+                            </div>
+                        </li>
+                        <li class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="certificate-body">
+                                <span class="certificate-title">Techmakers Consortium Certificate</span>
+                                <span class="certificate-meta">Techmakers &nbsp;&middot;&nbsp; 2025</span>
+                            </div>
+                        </li>
+                        <li class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="certificate-body">
+                                <span class="certificate-title">Helmond Digi Debat 2025 — School Representative</span>
+                                <span class="certificate-meta">Helmond / Ter AA &nbsp;&middot;&nbsp; 2025</span>
+                            </div>
+                        </li>
+                        <li class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="certificate-body">
+                                <span class="certificate-title">Drone Challenge 2026 — Ter AA Representative</span>
+                                <span class="certificate-meta">Ter AA &nbsp;&middot;&nbsp; 2026</span>
+                            </div>
+                        </li>
+                        <li class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="certificate-body">
+                                <span class="certificate-title">International Energy Challenge - Participant</span>
+                                <span class="certificate-meta">Avans/Ter AA &nbsp;&middot;&nbsp; 2026</span>
+                            </div>
+                        </li>
+                        <li class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="certificate-body">
+                                <span class="certificate-title">Drone Team Ter AA - Co-Pilot, Main 3D Designer & Main Embedded Systems Engineer</span>
+                                <span class="certificate-meta">Ter AA &nbsp;&middot;&nbsp; 2026</span>
+                            </div>
+                        </li>
+                        <li class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="certificate-body">
+                                <span class="certificate-title">Tech Talent Team Ter AA - Drone Team Section</span>
+                                <span class="certificate-meta">Ter AA &nbsp;&middot;&nbsp; 2026</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WEDE Projects -->
+<section class="section proj-section proj-section--wede" id="wede">
+    <div class="section-container">
+
+        <div class="proj-section-header">
+            <div class="proj-section-icon"><i class="fas fa-globe"></i></div>
+            <div>
+                <h2 class="section-title">WEDE</h2>
+                <p class="section-subtitle">Web Development Projects</p>
+            </div>
+        </div>
+        <div class="roman-divider"></div>
+
+        <div class="preview-grid">
+
+            <!-- Calculator++ -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/calculator++.png"
+                         alt="Calculator++"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">Calculator++</h3>
+                    <p class="preview-card-desc">Advanced calculator with converter, projects, and forms.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GameWorld -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/gameworld.jpg"
+                         alt="GameWorld"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">GameWorld</h3>
+                    <p class="preview-card-desc">Gaming e-commerce site for PC, PlayStation, and Xbox.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RadioGaga -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/RadioGagaScreenshot.png"
+                         alt="RadioGaga"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">RadioGaga</h3>
+                    <p class="preview-card-desc">Music radio station with artist galleries and playlists.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-cta">
+            <a href="pages/wede.html" class="btn-gold">
+                View All WEDE Projects <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- EBSY Projects -->
+<section class="section proj-section proj-section--ebsy" id="ebsy">
+    <div class="section-container">
+
+        <div class="proj-section-header">
+            <div class="proj-section-icon"><i class="fas fa-microchip"></i></div>
+            <div>
+                <h2 class="section-title">EBSY</h2>
+                <p class="section-subtitle">Embedded Systems Projects</p>
+            </div>
+        </div>
+        <div class="roman-divider"></div>
+
+        <div class="preview-grid">
+
+            <!-- Safe -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/EBSYsafe.png"
+                         alt="Safe"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">Safe</h3>
+                    <p class="preview-card-desc">Arduino LED safe</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bike Lamp -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/EBSYbikelamp1.jpg"
+                         alt="Bike Lamp"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">Bike Lamp</h3>
+                    <p class="preview-card-desc">Arduino LED lamp</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C-Controler-LCD-I2C -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/CControler.png"
+                         alt="C-Controler-LCD-I2C"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">C-Controler-LCD-I2C</h3>
+                    <p class="preview-card-desc">Arduino joystick controller with I2C LCD display.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-cta">
+            <a href="pages/ebsy.html" class="btn-gold">
+                View All EBSY Projects <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- APPR Projects -->
+<section class="section proj-section proj-section--appr" id="appr">
+    <div class="section-container">
+
+        <div class="proj-section-header">
+            <div class="proj-section-icon"><i class="fas fa-code"></i></div>
+            <div>
+                <h2 class="section-title">APPR</h2>
+                <p class="section-subtitle">Application Programming Projects</p>
+            </div>
+        </div>
+        <div class="roman-divider"></div>
+
+        <div class="preview-grid">
+
+            <!-- Guess Number -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/MisteryNumber.png"
+                         alt="Guess Number"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">Guess Number</h3>
+                    <p class="preview-card-desc">A number guessing game.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Race -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/apprRacePicture1.png"
+                         alt="Race"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">Race</h3>
+                    <p class="preview-card-desc">A racing game.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Astroidinator -->
+            <div class="preview-card">
+                <div class="preview-card-img-wrap">
+                    <img src="assets/Astroidinator1.png"
+                         alt="Astroidinator"
+                         class="preview-card-img" loading="lazy">
+                    <div class="preview-card-overlay"></div>
+                </div>
+                <div class="preview-card-body">
+                    <h3 class="preview-card-title">Astroidinator</h3>
+                    <p class="preview-card-desc">Fallout-themed side-scrolling shooter with Arduino controller support.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">Arduino</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-cta">
+            <a href="pages/appr.html" class="btn-gold">
+                View All APPR Projects <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+    <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Juliusz Krajewski. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/juliusz-krajewski-12a225389/?skipRedirect=true"
+               target="_blank" rel="noopener" class="social-btn social-btn--linkedin" title="LinkedIn">
+                <img src="assets/LinkedIn-Icon-Black-Logo.wine.svg" alt="LinkedIn" class="social-svg">
+            </a>
+            <a href="https://github.com/ShadowPL618"
+               target="_blank" rel="noopener" class="social-btn social-btn--github" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script>
+/* Mobile nav */
+const navToggle = document.getElementById('navToggle');
+const navMenu   = document.getElementById('navMenu');
+navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('nav-menu--open');
+    navToggle.classList.toggle('nav-toggle--active');
+});
+navMenu.querySelectorAll('.nav-link').forEach(l =>
+    l.addEventListener('click', () => {
+        navMenu.classList.remove('nav-menu--open');
+        navToggle.classList.remove('nav-toggle--active');
+    })
+);
+
+/* Active nav on scroll */
+const sections = document.querySelectorAll('section[id]');
+const links    = document.querySelectorAll('.nav-link');
+window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) cur = s.id; });
+    links.forEach(l => l.classList.toggle('nav-link--active', l.getAttribute('href') === `#${cur}`));
+}, { passive: true });
+
+/* Fade-in observer */
+const obs = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); } }),
+    { threshold: 0.1 }
+);
+document.querySelectorAll('.preview-card, .about-grid, .hero-text, .hero-photo-wrap').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>

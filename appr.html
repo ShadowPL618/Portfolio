@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPR – Application Programming Projects – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+</head>
+<body>
+
+<header class="main-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">Juliusz Krajewski</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#about" class="nav-link">Home</a></li>
+                <li><a href="ttt.html"            class="nav-link">TTT</a></li>
+                <li><a href="wede.html"           class="nav-link">WEDE</a></li>
+                <li><a href="ebsy.html"           class="nav-link">EBSY</a></li>
+                <li><a href="appr.html"           class="nav-link">APPR</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="portfolio-main">
+
+<section class="section proj-section--appr">
+    <div class="section-container">
+
+        <div class="proj-section-header">
+            <div class="proj-section-icon"><i class="fas fa-code"></i></div>
+            <div>
+                <h2 class="section-title">APPR</h2>
+                <p class="section-subtitle">Application Programming Projects</p>
+            </div>
+        </div>
+        <div class="roman-divider"></div>
+
+        <div class="projects-detailed-grid">
+
+            <!-- Guess Number -->
+            <div class="project-detailed-card">
+                <div class="project-media-carousel">
+                    <div class="carousel-main">
+                        <div class="carousel-item active">
+                            <img src="../assets/MisteryNumber.png" alt="MysteryNumber Game Interface">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="../assets/VideoGuessNumberAPPR_project1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-prev" onclick="changeSlide(this, -1)" title="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-next" onclick="changeSlide(this,  1)" title="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                    </div>
+                </div>
+
+                <div class="project-detailed-content">
+                    <h3>Guess Number</h3>
+
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p>MysteryNumber is an interactive Windows Forms (C#) desktop application where players guess a randomly generated number within a custom range. Developed using the MoSCoW method, it features real-time feedback via a "temperature" trackbar, sound effects, and a progress-tracking system, all while adhering to strict ROC Ter AA coding standards.</p>
+                    </div>
+
+                    <div class="project-tech-section">
+                        <h4>Technologies Used</h4>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET</span>
+                        </div>
+                    </div>
+
+                    <div class="project-action">
+                        <a href="https://github.com/ShadowPL618/C_Sharp_Mystery_NumberJkra" target="_blank" rel="noopener" class="btn-github">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Race -->
+            <div class="project-detailed-card">
+                <div class="project-media-carousel">
+                    <div class="carousel-main">
+                        <div class="carousel-item active">
+                            <img src="../assets/apprRacePicture1.png" alt="Starfighter Race – Start Screen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/apprRacePicture2.png" alt="Starfighter Race – Race View">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="../assets/VideoRaceAPPR_project2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-prev" onclick="changeSlide(this, -1)" title="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-next" onclick="changeSlide(this,  1)" title="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                    </div>
+                </div>
+
+                <div class="project-detailed-content">
+                    <h3>Race</h3>
+
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p>The Race is a C# Windows Forms application that simulates a competitive derby using Object-Oriented Programming. It features a class-based system for racers with randomized speeds, a hidden tab-navigation interface, and automated ranking. Key functionality includes real-time logging, CSV data persistence, and sound integration, all managed through a custom settings menu.</p>
+                    </div>
+
+                    <div class="project-tech-section">
+                        <h4>Technologies Used</h4>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET</span>
+                        </div>
+                    </div>
+
+                    <div class="project-action">
+                        <a href="https://github.com/ShadowPL618/Space-Race" target="_blank" rel="noopener" class="btn-github">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Astroidinator -->
+            <div class="project-detailed-card">
+                <div class="project-media-carousel">
+                    <div class="carousel-main">
+                        <div class="carousel-item active">
+                            <img src="../assets/Astroidinator1.png" alt="Astroidinator – Title Screen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Astroidinator2.png" alt="Astroidinator – Gameplay">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Astroidinator3.png" alt="Astroidinator – Slides">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Astroidinator4.png" alt="Astroidinator – Round 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Astroidinator5.png" alt="Astroidinator – Terminal">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="../assets/VideoRaceAPPR_project3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-prev" onclick="changeSlide(this, -1)" title="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-next" onclick="changeSlide(this,  1)" title="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 3)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 4)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 5)"></span>
+                    </div>
+                </div>
+
+                <div class="project-detailed-content">
+                    <h3>Astroidinator</h3>
+
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p>Astroidinator is a C# Windows Forms side-scrolling shooter game set in the Fallout New Vegas universe. The player controls a Brotherhood of Steel Paladin fighting NCR enemies, with an Arduino joystick controller as the intended input device. Features a lore slideshow intro, multiple enemy types, and a two-round boss mechanic.</p>
+                    </div>
+
+                    <div class="project-tech-section">
+                        <h4>Technologies Used</h4>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">Arduino</span>
+                        </div>
+                    </div>
+
+                    <div class="project-action">
+                        <a href="https://github.com/ShadowPL618/Operation-Sunburst-Defense" target="_blank" rel="noopener" class="btn-github">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="main-footer">
+    <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Juliusz Krajewski. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/juliusz-krajewski-12a225389/?skipRedirect=true"
+               target="_blank" rel="noopener" class="social-btn social-btn--linkedin" title="LinkedIn">
+                <img src="../assets/LinkedIn-Icon-Black-Logo.wine.svg" alt="LinkedIn" class="social-svg">
+            </a>
+            <a href="https://github.com/ShadowPL618"
+               target="_blank" rel="noopener" class="social-btn social-btn--github" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script>
+function changeSlide(btn, dir) {
+    const carousel = btn.closest('.project-media-carousel');
+    const items     = carousel.querySelectorAll('.carousel-item');
+    const dots      = carousel.querySelectorAll('.indicator');
+    let cur = [...items].findIndex(i => i.classList.contains('active'));
+    let next = (cur + dir + items.length) % items.length;
+    items[cur].classList.remove('active');
+    items[next].classList.add('active');
+    if (dots.length) { dots[cur].classList.remove('active'); dots[next].classList.add('active'); }
+}
+function goToSlide(dot, idx) {
+    const carousel = dot.closest('.project-media-carousel');
+    const items     = carousel.querySelectorAll('.carousel-item');
+    const dots      = carousel.querySelectorAll('.indicator');
+    let cur = [...items].findIndex(i => i.classList.contains('active'));
+    items[cur].classList.remove('active');
+    items[idx].classList.add('active');
+    dots[cur].classList.remove('active');
+    dots[idx].classList.add('active');
+}
+
+const navToggle = document.getElementById('navToggle');
+const navMenu   = document.getElementById('navMenu');
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('nav-menu--open');
+        navToggle.classList.toggle('nav-toggle--active');
+    });
+    navMenu.querySelectorAll('.nav-link').forEach(l =>
+        l.addEventListener('click', () => {
+            navMenu.classList.remove('nav-menu--open');
+            navToggle.classList.remove('nav-toggle--active');
+        })
+    );
+}
+</script>
+
+</body>
+</html>
