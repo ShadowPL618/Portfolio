@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBSY – Embedded Systems Projects – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+</head>
+<body>
+
+<header class="main-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">Juliusz Krajewski</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#about" class="nav-link">Home</a></li>
+                <li><a href="ttt.html"            class="nav-link">TTT</a></li>
+                <li><a href="wede.html"           class="nav-link">WEDE</a></li>
+                <li><a href="ebsy.html"           class="nav-link">EBSY</a></li>
+                <li><a href="appr.html"           class="nav-link">APPR</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="portfolio-main">
+
+<section class="section proj-section--ebsy">
+    <div class="section-container">
+
+        <div class="proj-section-header">
+            <div class="proj-section-icon"><i class="fas fa-microchip"></i></div>
+            <div>
+                <h2 class="section-title">EBSY</h2>
+                <p class="section-subtitle">Embedded Systems Projects</p>
+            </div>
+        </div>
+        <div class="roman-divider"></div>
+
+        <div class="projects-detailed-grid">
+
+            <!-- Safe -->
+            <div class="project-detailed-card">
+                <div class="project-media-carousel">
+                    <div class="carousel-main">
+                        <div class="carousel-item active">
+                            <img src="../assets/EBSYsafe.png" alt="Arduino Safe – Circuit Diagram">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detailed-content">
+                    <h3>Safe</h3>
+
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p>Arduino Safe is an embedded systems project featuring a three-digit passcode security mechanism. Built with C++ (Arduino), it utilizes digital I/O to process tactile button inputs and provide visual feedback via LEDs. The system includes sequence validation logic, timed states, and error-handling animations to simulate a real-world electronic lock.</p>
+                    </div>
+
+                    <div class="project-tech-section">
+                        <h4>Technologies Used</h4>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="project-action">
+                        <a href="https://github.com/ShadowPL618/Arduino-Safe" target="_blank" rel="noopener" class="btn-github">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bike Lamp -->
+            <div class="project-detailed-card">
+                <div class="project-media-carousel">
+                    <div class="carousel-main">
+                        <div class="carousel-item active">
+                            <img src="../assets/EBSYbikelamp1.jpg" alt="Bike Lamp – Hardware Setup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/EBSYbikelamp2.jpg" alt="Bike Lamp – Circuit Close-up">
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-prev" onclick="changeSlide(this, -1)" title="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-next" onclick="changeSlide(this,  1)" title="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                        <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                    </div>
+                </div>
+
+                <div class="project-detailed-content">
+                    <h3>Bike Lamp</h3>
+
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p>Fietsverlichting is an Arduino-based hardware project designed to simulate a multi-functional bike light system. Using digital I/O, the project transitions from a basic toggle switch to a sophisticated controller with four distinct light modes—Off, On, Blinking, and Wave—managed through iterative button presses.</p>
+                    </div>
+
+                    <div class="project-tech-section">
+                        <h4>Technologies Used</h4>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="project-action">
+                        <a href="https://github.com/ShadowPL618/Bike-Lamp" target="_blank" rel="noopener" class="btn-github">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C-Controler-LCD-I2C -->
+            <div class="project-detailed-card">
+                <div class="project-media-carousel">
+                    <div class="carousel-main">
+                        <div class="carousel-item active">
+                            <img src="../assets/CControler.png" alt="C-Controler – Hardware Setup">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detailed-content">
+                    <h3>C-Controler-LCD-I2C</h3>
+
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p>C-Controler-LCD-I2C is an Arduino UNO R4 WiFi embedded systems project that reads joystick input and displays directional data on an I2C LCD screen, while streaming movement commands over serial to a connected PC application.</p>
+                    </div>
+
+                    <div class="project-tech-section">
+                        <h4>Technologies Used</h4>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="project-action">
+                        <a href="https://github.com/ShadowPL618/C-Controler-LCD-I2C" target="_blank" rel="noopener" class="btn-github">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="main-footer">
+    <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Juliusz Krajewski. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/juliusz-krajewski-12a225389/?skipRedirect=true"
+               target="_blank" rel="noopener" class="social-btn social-btn--linkedin" title="LinkedIn">
+                <img src="../assets/LinkedIn-Icon-Black-Logo.wine.svg" alt="LinkedIn" class="social-svg">
+            </a>
+            <a href="https://github.com/ShadowPL618"
+               target="_blank" rel="noopener" class="social-btn social-btn--github" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script>
+function changeSlide(btn, dir) {
+    const carousel = btn.closest('.project-media-carousel');
+    const items     = carousel.querySelectorAll('.carousel-item');
+    const dots      = carousel.querySelectorAll('.indicator');
+    let cur = [...items].findIndex(i => i.classList.contains('active'));
+    let next = (cur + dir + items.length) % items.length;
+    items[cur].classList.remove('active');
+    items[next].classList.add('active');
+    if (dots.length) { dots[cur].classList.remove('active'); dots[next].classList.add('active'); }
+}
+function goToSlide(dot, idx) {
+    const carousel = dot.closest('.project-media-carousel');
+    const items     = carousel.querySelectorAll('.carousel-item');
+    const dots      = carousel.querySelectorAll('.indicator');
+    let cur = [...items].findIndex(i => i.classList.contains('active'));
+    items[cur].classList.remove('active');
+    items[idx].classList.add('active');
+    dots[cur].classList.remove('active');
+    dots[idx].classList.add('active');
+}
+
+const navToggle = document.getElementById('navToggle');
+const navMenu   = document.getElementById('navMenu');
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('nav-menu--open');
+        navToggle.classList.toggle('nav-toggle--active');
+    });
+    navMenu.querySelectorAll('.nav-link').forEach(l =>
+        l.addEventListener('click', () => {
+            navMenu.classList.remove('nav-menu--open');
+            navToggle.classList.remove('nav-toggle--active');
+        })
+    );
+}
+</script>
+
+</body>
+</html>
